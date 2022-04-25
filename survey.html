@@ -21,11 +21,11 @@
 
         <label for="guest-name">What is your name?</label>
         <br>
-        <input type="text" name="guest-name" id="guest-name">
-
+        <input required minlength="1" maxlength="100" pattern=[a-zA-Z0-9] type="text" name="guest-name" id="guest-name">
+        <br>
+        <br>
 
         <p>Which of the following traits of growth mindset applied to you?</p>
-
         <input id="answer1" name="meaning" type="checkbox" value="answer1">
         <label for="answer1">Demonstrates willingness to accept new, challenging concepts as an opportunity to learn and grow.</label>
         <br>
@@ -47,7 +47,7 @@
         </label>
         <br>
         <span>1</span>
-        <input id="volume" name="volume" type="range" min="0" max="10" step="1">
+        <input required id="volume" name="volume" type="range" min="0" max="10" step="1">
         <span>10</span>
         <br>
         <br>
@@ -62,7 +62,6 @@
     </form>
     
 </main>
-
 
 </body>
 </html>
