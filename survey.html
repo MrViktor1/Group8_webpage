@@ -9,23 +9,58 @@
 <body>
 
 <nav>
-    <h1>Home</h1>
-    <h1>Resources</h1>
-    <h1>Additional</h1>
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="OtherBSMs.html">Other BSMs</a>
 </nav>
 
 <main>
     <h1>Please fill out the survey below</h1>
-    
-    <form>
 
+    <form action="survey-submit.html" method="POST">
+
+        <label for="guest-name">What is your name?</label>
+        <br>
+        <input type="text" name="guest-name" id="guest-name">
+
+
+        <p>Which of the following traits of growth mindset applied to you?</p>
+
+        <input id="answer1" name="meaning" type="checkbox" value="answer1">
+        <label for="answer1">Demonstrates willingness to accept new, challenging concepts as an opportunity to learn and grow.</label>
+        <br>
+
+        <input id="answer2" name="meaning" type="checkbox" value="answer2">
+        <label for="answer2">Participates throughout sessions, engages in discussions and activities despite potential mistakes or incorrect answers.</label>
+        <br>
+
+        <input id="answer3" name="meaning" type="checkbox" value="answer3">
+        <label for="answer3">Provides and accepts feedback from peers, instructors and/or mentors.</label>
+        <br>
+
+        <input id="answer4" name="meaning" type="checkbox" value="answer4">
+        <label for="answer4">Accepts the challenge of utilizing new technology tools.</label>
+        <br>
+        <br>
+
+        <label for="volume">On a scale of 1-10, how much do you think growth mindset benefit you?
+        </label>
+        <br>
+        <span>1</span>
+        <input id="volume" name="volume" type="range" min="0" max="10" step="1">
+        <span>10</span>
+        <br>
+        <br>
+    
+        <label for="comment">Any additional comment?</label>
+        <br>
+        <textarea rows="10" cols="40" name="comment"></textarea>
+        <br>
+        <br>
+
+       <input type="submit" value="Send">
     </form>
-    <h1>What does Growth Mindset mean to you?</h1>
     
-    
-    <button>
-        
-    </button>
 </main>
 
 
